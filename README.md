@@ -1,2 +1,7 @@
-# exileinfo_back
-Script for reading the API and populate a mongo database
+# ExileInfo PoE API reader
+
+## Mongo Instalation
+
+- Install Gem with `gem install mongo`
+- [Install MongoDB](https://www.mongodb.com/download-center?jmp=nav)
+- Opt.: [Install Robo 3T](https://robomongo.org/) (MongoDB GUI) 
