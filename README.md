@@ -9,7 +9,7 @@
 ## Running
 
 - Start the mongodb server with `mongod`
-- Run the program with `run.rb`
+- Run the script with `run.rb`
 
 ### Source and help
 [Documentation](http://api.mongodb.com/ruby/current/Mongo/Collection.html)
