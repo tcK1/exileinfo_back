@@ -3,7 +3,7 @@ require 'json'
 require 'mongo'
 require 'ap'
 
-@client = Mongo::Client.new('mongodb://127.0.0.1:27017/exileinfo')
+$CLIENT = Mongo::Client.new('mongodb://127.0.0.1:27017/exileinfo')
 
 def request (url)
   uri = URI(url)
@@ -12,7 +12,7 @@ def request (url)
 end
 
 def collection (name)
-  collection = @client[name]
+  collection = $CLIENT[name]
   collection.drop
   return collection
 end
@@ -22,27 +22,35 @@ end
 data = request('http://api.pathofexile.com/leagues?type=main')
 # ap data
 
-col_id = collection(:leagues)
+col_id = collection('leagues')
 
 result = col_id.insert_many(data)
 
 puts "\n"
-puts "Inserted #{result.inserted_count} values into #{col_id.name}"
+puts "Inserted #{col_id.count()} values into #{col_id.name}"
 puts "\n"
-puts "#{col_id.find.first[:id]}"
-puts "\n"
-###############################################################################
-col = collection(:characters)
 
-# CHANGE TO 75
-2.times do |value| # starts at 0 end at 74
-  data = request('http://api.pathofexile.com/ladders/'+col_id.find.first[:id]+'?limit=200&offset='+(value*200).to_s)
-  result = col.insert_many(data["entries"])
-  # ap data
+$leagues = Array.new
+col_id.find.each do |league|
+  $leagues << league[:id]
+end
+###############################################################################
+
+$leagues.each do |league|
+  col = collection('characters ('+league+')')
+
+  # CHANGE TO 75
+  1.times do |value| # starts at 0 end at 74
+    data = request('http://api.pathofexile.com/ladders/'+col_id.find.first[:id]+'?limit=200&offset='+(value*200).to_s)
+    # SHOULD VERIFY IF CHARACTER IS PUBLIC AND ADD IT TO THE COLLECTION
+    result = col.insert_many(data["entries"])
+    # ap data
+  end
+
+  puts "\n"
+  puts "Inserted #{col.count()} values into #{col.name}"
+  puts "\n"
 end
 
 puts "\n"
-puts "Inserted #{col.count()} values into #{col.name}"
-puts "\n"
-
 # https://www.pathofexile.com/character-window/get-items?accountName=K41C&character=tcKwz
