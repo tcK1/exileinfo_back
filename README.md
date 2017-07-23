@@ -13,3 +13,4 @@
 
 ### Source and help
 [Documentation](http://api.mongodb.com/ruby/current/Mongo/Collection.html)
+[Quick-Start](https://docs.mongodb.com/ruby-driver/master/quick-start/)
