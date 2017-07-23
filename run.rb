@@ -3,17 +3,46 @@ require 'json'
 require 'mongo'
 require 'ap'
 
-client = Mongo::Client.new('mongodb://127.0.0.1:27017/exileinfo')
+@client = Mongo::Client.new('mongodb://127.0.0.1:27017/exileinfo')
 
-# Select collection, read from the API and insert on the base
-collection = client[:accounts]
-collection.drop
+def request (url)
+  uri = URI(url)
+  response = Net::HTTP.get(uri)
+  return JSON.parse(response)
+end
 
-url = 'http://api.pathofexile.com/ladders/Standard'
-uri = URI(url)
-response = Net::HTTP.get(uri)
-j = JSON.parse(response)
-ap j["entries"]
+def collection (name)
+  collection = @client[name]
+  collection.drop
+  return collection
+end
 
-result = collection.insert_many(j["entries"])
-ap result.inserted_count
+###############################################################################
+# Gets all the main leagues
+data = request('http://api.pathofexile.com/leagues?type=main')
+# ap data
+
+col_id = collection(:leagues)
+
+result = col_id.insert_many(data)
+
+puts "\n"
+puts "Inserted #{result.inserted_count} values into #{col_id.name}"
+puts "\n"
+puts "#{col_id.find.first[:id]}"
+puts "\n"
+###############################################################################
+col = collection(:characters)
+
+# CHANGE TO 75
+2.times do |value| # starts at 0 end at 74
+  data = request('http://api.pathofexile.com/ladders/'+col_id.find.first[:id]+'?limit=200&offset='+(value*200).to_s)
+  result = col.insert_many(data["entries"])
+  # ap data
+end
+
+puts "\n"
+puts "Inserted #{col.count()} values into #{col.name}"
+puts "\n"
+
+# https://www.pathofexile.com/character-window/get-items?accountName=K41C&character=tcKwz
