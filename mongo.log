@@ -1,0 +1,77 @@
+D, [2017-07-23T22:01:09.170075 #7320] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2017-07-23T22:01:09.170575 #7320] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2017-07-23T22:01:09.185077 #7320] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2017-07-23T22:01:09.185577 #7320] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2017-07-23T22:01:09.185577 #7320] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2017-07-23T22:01:13.107049 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"leagues"}
+D, [2017-07-23T22:01:13.140071 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.032032s
+D, [2017-07-23T22:01:13.142071 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"leagues", "documents"=>[{"id"=>"Standard", "description"=>"The default game mode.", "registerAt"=>nil, "event"=>false, "url"=>"http://pathofexile.com/forum/view-thread/71278", "startAt"=>"2013-01-23T21:00:00Z", "endAt"=>nil, "rules"=>[], :...
+D, [2017-07-23T22:01:13.163707 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.021636s
+D, [2017-07-23T22:01:13.164708 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"leagues", "query"=>{}}
+D, [2017-07-23T22:01:13.175747 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011039s
+D, [2017-07-23T22:01:13.176737 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.find | STARTED | {"find"=>"leagues", "filter"=>{}}
+D, [2017-07-23T22:01:13.188739 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.find | SUCCEEDED | 0.012502000000000001s
+D, [2017-07-23T22:01:13.188739 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (Standard)"}
+D, [2017-07-23T22:01:13.210242 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.021003s
+D, [2017-07-23T22:01:17.131648 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (Standard)", "documents"=>[{"equipment"=>{"items"=>[{"verified"=>false, "w"=>2, "h"=>2, "ilvl"=>68, "icon"=>"https://web.poecdn.com/image/Art/2DItems/Armours/Helmets/RatsNest.png?scale=1&w=2&h=2&v=a20e8fdbbf1dc39051fe8a0458cab81...
+D, [2017-07-23T22:01:17.143128 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.01148s
+D, [2017-07-23T22:01:17.144129 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (Standard)", "query"=>{}}
+D, [2017-07-23T22:01:17.155630 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011002s
+D, [2017-07-23T22:01:17.156130 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (Hardcore)"}
+D, [2017-07-23T22:01:17.177632 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.021502s
+D, [2017-07-23T22:01:21.573755 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (Hardcore)", "documents"=>[{"equipment"=>{"items"=>[{"verified"=>false, "w"=>2, "h"=>1, "ilvl"=>72, "icon"=>"https://web.poecdn.com/image/Art/2DItems/Belts/Belt3.png?scale=1&w=2&h=1&v=a559821037f54c94dae053b90bcea3633", "league"...
+D, [2017-07-23T22:01:21.596761 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.023006s
+D, [2017-07-23T22:01:21.599261 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (Hardcore)", "query"=>{}}
+D, [2017-07-23T22:01:21.600261 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.0005s
+D, [2017-07-23T22:01:21.601259 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (SSF Standard)"}
+D, [2017-07-23T22:01:21.612261 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.011002s
+D, [2017-07-23T22:01:25.078983 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (SSF Standard)", "documents"=>[{"equipment"=>{"items"=>[{"verified"=>false, "w"=>1, "h"=>2, "ilvl"=>43, "icon"=>"https://web.poecdn.com/gen/image/YTo2OntzOjEyOiJlcXVp/cHBlZE9ubHkiO2I6MTtz/Ojk6ImFjY291bnRJZCI7/TzoxODoiR3JpbmRiXER...
+D, [2017-07-23T22:01:25.097082 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.018099s
+D, [2017-07-23T22:01:25.098064 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (SSF Standard)", "query"=>{}}
+D, [2017-07-23T22:01:25.109082 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011018s
+D, [2017-07-23T22:01:25.109580 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (SSF Hardcore)"}
+D, [2017-07-23T22:01:25.120099 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.010519s
+D, [2017-07-23T22:01:30.374568 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (SSF Hardcore)", "documents"=>[{"equipment"=>{"items"=>[{"verified"=>false, "w"=>1, "h"=>3, "ilvl"=>59, "icon"=>"https://web.poecdn.com/image/Art/2DItems/Weapons/OneHandWeapons/Wands/Wand3.png?scale=1&w=1&h=3&v=ac9f7eee09f5a8f58...
+D, [2017-07-23T22:01:30.386578 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.01251s
+D, [2017-07-23T22:01:30.387569 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (SSF Hardcore)", "query"=>{}}
+D, [2017-07-23T22:01:30.398602 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011033s
+D, [2017-07-23T22:01:30.399571 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (Legacy)"}
+D, [2017-07-23T22:01:30.410073 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | FAILED | ns not found (26) | 0.011002s
+D, [2017-07-23T22:01:35.933096 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (Legacy)", "query"=>{}}
+D, [2017-07-23T22:01:35.944098 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011002s
+D, [2017-07-23T22:01:35.945097 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (Hardcore Legacy)"}
+D, [2017-07-23T22:01:35.956100 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.010502s
+D, [2017-07-23T22:01:41.536468 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (Hardcore Legacy)", "documents"=>[{"equipment"=>{"items"=>[{"verified"=>false, "w"=>2, "h"=>1, "ilvl"=>69, "icon"=>"https://web.poecdn.com/image/Art/2DItems/Belts/Headhunter.png?scale=1&w=2&h=1&v=00b786d294eb957cf1e02b8d95f55425...
+D, [2017-07-23T22:01:41.564626 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.027645s
+D, [2017-07-23T22:01:41.566106 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (Hardcore Legacy)", "query"=>{}}
+D, [2017-07-23T22:01:41.577184 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011078s
+D, [2017-07-23T22:01:41.578683 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (SSF Legacy)"}
+D, [2017-07-23T22:01:41.589697 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.011515s
+D, [2017-07-23T22:01:45.408508 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (SSF Legacy)", "documents"=>[{"equipment"=>{"items"=>[{"verified"=>false, "w"=>2, "h"=>2, "ilvl"=>75, "icon"=>"https://web.poecdn.com/image/Art/2DItems/Armours/Gloves/SadimasTouch.png?scale=1&w=2&h=2&relic=1&v=cb90ee55ca2ea5dda2...
+D, [2017-07-23T22:01:45.430010 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.021001s
+D, [2017-07-23T22:01:45.431510 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (SSF Legacy)", "query"=>{}}
+D, [2017-07-23T22:01:45.442512 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.010502s
+D, [2017-07-23T22:01:45.443012 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (SSF HC Legacy)"}
+D, [2017-07-23T22:01:45.454514 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.011002s
+D, [2017-07-23T22:01:49.439553 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (SSF HC Legacy)", "documents"=>[{"equipment"=>{"items"=>[{"verified"=>false, "w"=>1, "h"=>2, "ilvl"=>70, "icon"=>"https://web.poecdn.com/gen/image/YTo2OntzOjEyOiJlcXVp/cHBlZE9ubHkiO2I6MTtz/Ojk6ImFjY291bnRJZCI7/TzoxODoiR3JpbmRiXE...
+D, [2017-07-23T22:01:49.467911 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.028148s
+D, [2017-07-23T22:01:49.471413 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (SSF HC Legacy)", "query"=>{}}
+D, [2017-07-23T22:01:49.472411 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.0005s
+D, [2017-07-23T22:01:49.473913 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (2 Week Turmoil (JRE094))"}
+D, [2017-07-23T22:01:49.484954 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.01054s
+D, [2017-07-23T22:01:53.897590 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (2 Week Turmoil (JRE094))", "documents"=>[{"equipment"=>{"items"=>[], "character"=>{"name"=>"WrexPleaseNerfNecroSupp", "league"=>"2 Week Turmoil (JRE094)", "classId"=>3, "ascendancyClass"=>2, "class"=>"Elementalist", "level"=>10...
+D, [2017-07-23T22:01:53.908600 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.01101s
+D, [2017-07-23T22:01:53.910093 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (2 Week Turmoil (JRE094))", "query"=>{}}
+D, [2017-07-23T22:01:53.921594 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011501s
+D, [2017-07-23T22:01:53.922095 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (2 Week Turmoil HC (JRE095))"}
+D, [2017-07-23T22:01:53.933095 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.010501s
+D, [2017-07-23T22:01:58.280025 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (2 Week Turmoil HC (JRE095))", "documents"=>[{"equipment"=>{"items"=>[], "character"=>{"name"=>"FreeqTwoWeek", "league"=>"2 Week Turmoil HC (JRE095)", "classId"=>3, "ascendancyClass"=>2, "class"=>"Elementalist", "level"=>100}}, ...
+D, [2017-07-23T22:01:58.303438 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.023413s
+D, [2017-07-23T22:01:58.305401 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (2 Week Turmoil HC (JRE095))", "query"=>{}}
+D, [2017-07-23T22:01:58.305900 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.000499s
+D, [2017-07-23T22:01:58.306901 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | STARTED | {"drop"=>"characters (2 Week Turmoil HC Solo (JRE096))"}
+D, [2017-07-23T22:01:58.317959 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.drop | SUCCEEDED | 0.011058s
+D, [2017-07-23T22:02:02.272061 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | STARTED | {"insert"=>"characters (2 Week Turmoil HC Solo (JRE096))", "documents"=>[{"equipment"=>{"items"=>[], "character"=>{"name"=>"Ethereal_KINO", "league"=>"2 Week Turmoil HC Solo (JRE096)", "classId"=>2, "ascendancyClass"=>3, "class"=>"Pathfinder", "level"...
+D, [2017-07-23T22:02:02.295217 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.insert | SUCCEEDED | 0.022656s
+D, [2017-07-23T22:02:02.297216 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | STARTED | {"count"=>"characters (2 Week Turmoil HC Solo (JRE096))", "query"=>{}}
+D, [2017-07-23T22:02:02.308790 #7320] DEBUG -- : MONGODB | 127.0.0.1:27017 | exileinfo.count | SUCCEEDED | 0.011073s
